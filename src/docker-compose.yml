@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  ntk2023.api:
+    image: ${DOCKER_REGISTRY-}ntk2023api
+    ports:
+        - "60545:80"
+    build:
+      context: .
+      dockerfile: Ntk2023.Api/Dockerfile
+
+  ntk2023.web:
+    image: ${DOCKER_REGISTRY-}ntk2023web
+    build:
+      context: .
+      dockerfile: Ntk2023.Web/Dockerfile
+

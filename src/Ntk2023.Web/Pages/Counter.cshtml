@@ -1,0 +1,17 @@
+﻿@page
+@model Ntk2023.Web.Pages.CounterModel
+@{
+    ViewData["Title"] = "Counter";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Counter</h1>
+    <p><strong>@Model.CurrentCount</strong></p>
+    <p>
+        <form method="post">
+            <input type="submit" id="btnIncrement" value="Increment me" asp-page-handler="Increment" />
+        </form>
+    </p>
+
+</div>
+

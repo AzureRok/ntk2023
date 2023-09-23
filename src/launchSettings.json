@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "ntk2023.api": "StartDebugging",
+        "ntk2023.web": "StartDebugging"
+      }
+    }
+  }
+}

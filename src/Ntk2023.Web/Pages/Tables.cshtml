@@ -1,0 +1,16 @@
+﻿@page
+@model Ntk2023.Web.Pages.TablesModel
+@{
+    ViewData["Title"] = "Tables";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Tables</h1>
+    <ul>
+    @foreach (var table in Model.Tables)
+    {
+        <li>[@table.Schema].[@table.Name]</li>
+    }
+    </ul>
+</div>
+
